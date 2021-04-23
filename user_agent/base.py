@@ -73,11 +73,11 @@ NAVIGATOR_DEVICE_TYPE = {
 }
 OS_PLATFORM = {
     'win': (
-        'Windows NT 5.1', # Windows XP
-        'Windows NT 6.1', # Windows 7
-        'Windows NT 6.2', # Windows 8
-        'Windows NT 6.3', # Windows 8.1
-        'Windows NT 10.0', # Windows 10
+        'Windows NT 5.1',  # Windows XP
+        'Windows NT 6.1',  # Windows 7
+        'Windows NT 6.2',  # Windows 8
+        'Windows NT 6.3',  # Windows 8.1
+        'Windows NT 10.0',  # Windows 10
     ),
     'mac': (
         'Macintosh; Intel Mac OS X 10.8',
@@ -91,40 +91,40 @@ OS_PLATFORM = {
         'X11; Ubuntu; Linux',
     ),
     'android': (
-        'Android 4.4', # 2013-10-31
-        'Android 4.4.1', # 2013-12-05
-        'Android 4.4.2', # 2013-12-09
-        'Android 4.4.3', # 2014-06-02
-        'Android 4.4.4', # 2014-06-19
-        'Android 5.0', # 2014-11-12
-        'Android 5.0.1', # 2014-12-02
-        'Android 5.0.2', # 2014-12-19
-        'Android 5.1', # 2015-03-09
-        'Android 5.1.1', # 2015-04-21
-        'Android 6.0', # 2015-10-05
-        'Android 6.0.1', # 2015-12-07
-        #'Android 7.0', # 2016-08-22
-        #'Android 7.1', # 2016-10-04
-        #'Android 7.1.1', # 2016-12-05
+        'Android 4.4',  # 2013-10-31
+        'Android 4.4.1',  # 2013-12-05
+        'Android 4.4.2',  # 2013-12-09
+        'Android 4.4.3',  # 2014-06-02
+        'Android 4.4.4',  # 2014-06-19
+        'Android 5.0',  # 2014-11-12
+        'Android 5.0.1',  # 2014-12-02
+        'Android 5.0.2',  # 2014-12-19
+        'Android 5.1',  # 2015-03-09
+        'Android 5.1.1',  # 2015-04-21
+        'Android 6.0',  # 2015-10-05
+        'Android 6.0.1',  # 2015-12-07
+        # 'Android 7.0', # 2016-08-22
+        # 'Android 7.1', # 2016-10-04
+        # 'Android 7.1.1', # 2016-12-05
     ),
 }
 OS_CPU = {
     'win': (
-        '', # 32bit
-        'Win64; x64', # 64bit
-        'WOW64', # 32bit process on 64bit system
+        '',  # 32bit
+        'Win64; x64',  # 64bit
+        'WOW64',  # 32bit process on 64bit system
     ),
     'linux': (
-        'i686', # 32bit
-        'x86_64', # 64bit
-        'i686 on x86_64', # 32bit process on 64bit system
+        'i686',  # 32bit
+        'x86_64',  # 64bit
+        'i686 on x86_64',  # 32bit process on 64bit system
     ),
     'mac': (
         '',
     ),
     'android': (
-        'armv7l', # 32bit
-        'armv8l', # 64bit
+        'armv7l',  # 32bit
+        'armv8l',  # 64bit
     ),
 }
 OS_NAVIGATOR = {
@@ -139,56 +139,40 @@ NAVIGATOR_OS = {
     'ie': ('win',),
 }
 FIREFOX_VERSION = (
-    ('45.0', datetime(2016, 3, 8)),
-    ('46.0', datetime(2016, 4, 26)),
-    ('47.0', datetime(2016, 6, 7)),
-    ('48.0', datetime(2016, 8, 2)),
-    ('49.0', datetime(2016, 9, 20)),
-    ('50.0', datetime(2016, 11, 15)),
-    ('51.0', datetime(2017, 1, 24)),
+    ('78.0', datetime(2020, 6, 30)),
+    ('83.0', datetime(2020, 11, 17)),
+    ('84.0', datetime(2020, 12, 15)),
+    ('86.0', datetime(2021, 2, 23)),
+    ('87.0', datetime(2021, 3, 23)),
+    ('88.0', datetime(2021, 4, 19)),
+    ('89.0', datetime(2021, 6, 1)),
 )
 
 # Top chrome builds from website access log
 # for september, october 2020
 CHROME_BUILD = '''
-80.0.3987.132
-80.0.3987.149
-80.0.3987.99
-81.0.4044.117
-81.0.4044.138
-83.0.4103.101
-83.0.4103.106
-83.0.4103.96
-84.0.4147.105
-84.0.4147.111
-84.0.4147.125
-84.0.4147.135
-84.0.4147.89
-85.0.4183.101
-85.0.4183.102
-85.0.4183.120
-85.0.4183.121
-85.0.4183.127
-85.0.4183.81
-85.0.4183.83
-86.0.4240.110
-86.0.4240.111
-86.0.4240.114
-86.0.4240.183
-86.0.4240.185
-86.0.4240.75
-86.0.4240.78
-86.0.4240.80
-86.0.4240.96
-86.0.4240.99
+89.0.4389.90
+89.0.4389.82
+88.0.4324.190
+88.0.4324.182
+89.0.4389.128
+99.0.7113.93
+89.0.4389.114
+76.0.3809.100
+88.0.4324.150
+90.0.4430.72
+88.0.4324.192
+89.0.4389.105
+90.0.4430.85
+89.0.4389.86
 '''.strip().splitlines()
 
 IE_VERSION = (
     # (numeric ver, string ver, trident ver) # release year
-    (8, 'MSIE 8.0', '4.0'), # 2009
-    (9, 'MSIE 9.0', '5.0'), # 2011
-    (10, 'MSIE 10.0', '6.0'), # 2012
-    (11, 'MSIE 11.0', '7.0'), # 2013
+    (8, 'MSIE 8.0', '4.0'),  # 2009
+    (9, 'MSIE 9.0', '5.0'),  # 2011
+    (10, 'MSIE 10.0', '6.0'),  # 2012
+    (11, 'MSIE 11.0', '7.0'),  # 2013
 )
 USER_AGENT_TEMPLATE = {
     'firefox': (
@@ -237,7 +221,7 @@ def get_firefox_build():
         date_to = date_from + timedelta(days=1)
     sec_range = (date_to - date_from).total_seconds() - 1
     build_rnd_time = (
-        date_from + timedelta(seconds=randomizer.randint(0, sec_range))
+            date_from + timedelta(seconds=randomizer.randint(0, int(sec_range)))
     )
     return build_ver, build_rnd_time.strftime('%Y%m%d%H%M%S')
 

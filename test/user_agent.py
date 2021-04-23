@@ -19,7 +19,7 @@ from user_agent import (
 
 def test_it():
     agent = generate_user_agent()
-    assert len(agent) > 0 # pylint: disable=len-as-condition
+    assert len(agent) > 0   # pylint: disable=len-as-condition
 
 
 def test_platform_option():
